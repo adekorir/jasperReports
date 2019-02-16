@@ -1,0 +1,12 @@
+# ide folders
+.vscode
+.idea
+nbproject
+
+# generated folders
+target
+build
+
+# ide files
+*.iml
+
