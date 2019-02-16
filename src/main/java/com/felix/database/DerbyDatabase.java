@@ -31,5 +31,10 @@ public class DerbyDatabase implements Database {
     @Override
     public void tearDown() throws SQLException {
     }
+
+    @Override
+    public String toString() {
+        return "DerbyDatabase: " + URL;
+    }
     
 }

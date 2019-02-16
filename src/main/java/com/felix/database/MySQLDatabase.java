@@ -21,4 +21,9 @@ public class MySQLDatabase implements Database {
     public Connection connect() throws SQLException {
         return DriverManager.getConnection(String.format("jdbc:mhysql://localhost:3306/%s", name), user, pass);
     }
+
+    @Override
+    public String toString() {
+        return "MySQLDatabase: " + name;
+    }
 }
