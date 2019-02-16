@@ -19,6 +19,7 @@ public class DerbyDatabase implements Database {
     @Override
     public void init() throws SQLException {
         if (URL.startsWith("//localhost")) {
+            System.out.println("Derby initializing()");
         }
     }
 

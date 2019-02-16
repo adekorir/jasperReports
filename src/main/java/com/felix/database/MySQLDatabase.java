@@ -19,7 +19,7 @@ public class MySQLDatabase implements Database {
 
     @Override
     public Connection connect() throws SQLException {
-        return DriverManager.getConnection(String.format("jdbc:mhysql://localhost:3306/%s", name), user, pass);
+        return DriverManager.getConnection(String.format("jdbc:mysql://localhost:3306/%s", name), user, pass);
     }
 
     @Override
